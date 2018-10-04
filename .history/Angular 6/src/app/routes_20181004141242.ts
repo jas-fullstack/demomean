@@ -16,7 +16,8 @@ export const appRoutes: Routes = [
         children: [{ path: '', component: SignInComponent }]
     },
     {
-        path: 'contact-us', component: ContactusComponent,
+        path: 'contactus', component: ContactusComponent,
+        children: [{ path: '', component: SignInComponent }]
     },
     {
         path: 'userprofile', component: UserProfileComponent,canActivate:[AuthGuard]

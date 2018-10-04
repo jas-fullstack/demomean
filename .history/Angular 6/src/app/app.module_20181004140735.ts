@@ -1,7 +1,7 @@
 // built-in
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 // components
@@ -31,8 +31,7 @@ import { ContactusComponent } from './contactus/contactus.component';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule,
-    ReactiveFormsModule
+    HttpClientModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
