@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-var nodemailer = require('nodemailer');
 
 const ctrlUser = require('../controllers/user.controller');
 const ctrlEmail = require('../controllers/email.controller');
